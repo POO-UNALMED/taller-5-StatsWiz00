@@ -12,7 +12,4 @@ public class Zoologico {
     }
     public Zoologico(){
     }
-    public int cantidadTotalAnimales(){
-        return
-    }
 }
