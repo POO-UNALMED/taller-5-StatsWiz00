@@ -9,7 +9,10 @@ public class Pez extends Animal{
     private String colorEscamas;
     private int cantidadAletas;
 
-    public Pez(Pez[] listado, int salmones, int bacalaos, String colorEscamas, int cantidadAletas,int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
+    public Pez() {
+    }
+
+    public Pez(Pez[] listado, int salmones, int bacalaos, String colorEscamas, int cantidadAletas, int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
         super(totalAnimales, nombre, edad, habitat, genero, zona);
         this.listado = listado;
         this.salmones = salmones;

@@ -8,7 +8,9 @@ public class Animal {
     private String genero;
     private Zona[] zona;
 
+    public Animal(){
 
+    }
     public Animal(int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
         this.totalAnimales = totalAnimales;
         this.nombre = nombre;

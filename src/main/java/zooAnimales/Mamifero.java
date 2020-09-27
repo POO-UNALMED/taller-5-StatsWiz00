@@ -9,6 +9,9 @@ public class Mamifero extends Animal{
     private boolean pelaje;
     private int patas;
 
+    public Mamifero(){
+
+    }
     public Mamifero(Mamifero[] listado, int caballos, int leones, boolean pelaje, int patas, int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
         super(totalAnimales, nombre, edad, habitat, genero, zona);
         this.listado = listado;

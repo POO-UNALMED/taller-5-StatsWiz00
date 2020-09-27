@@ -10,4 +10,9 @@ public class Zoologico {
         this.ubicacion = ubicacion;
         this.zonas = zonas;
     }
+    public Zoologico(){
+    }
+    public int cantidadTotalAnimales(){
+        return
+    }
 }
