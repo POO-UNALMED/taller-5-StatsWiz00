@@ -18,4 +18,36 @@ public class Ave extends Animal{
         this.aguilas = aguilas;
         this.colorPlumas = colorPlumas;
     }
+
+    public Ave[] getListado() {
+        return listado;
+    }
+
+    public void setListado(Ave[] listado) {
+        this.listado = listado;
+    }
+
+    public int getHalcones() {
+        return halcones;
+    }
+
+    public void setHalcones(int halcones) {
+        this.halcones = halcones;
+    }
+
+    public int getAguilas() {
+        return aguilas;
+    }
+
+    public void setAguilas(int aguilas) {
+        this.aguilas = aguilas;
+    }
+
+    public String getColorPlumas() {
+        return colorPlumas;
+    }
+
+    public void setColorPlumas(String colorPlumas) {
+        this.colorPlumas = colorPlumas;
+    }
 }

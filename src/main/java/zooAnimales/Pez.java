@@ -20,4 +20,44 @@ public class Pez extends Animal{
         this.colorEscamas = colorEscamas;
         this.cantidadAletas = cantidadAletas;
     }
+
+    public Pez[] getListado() {
+        return listado;
+    }
+
+    public void setListado(Pez[] listado) {
+        this.listado = listado;
+    }
+
+    public int getSalmones() {
+        return salmones;
+    }
+
+    public void setSalmones(int salmones) {
+        this.salmones = salmones;
+    }
+
+    public int getBacalaos() {
+        return bacalaos;
+    }
+
+    public void setBacalaos(int bacalaos) {
+        this.bacalaos = bacalaos;
+    }
+
+    public String getColorEscamas() {
+        return colorEscamas;
+    }
+
+    public void setColorEscamas(String colorEscamas) {
+        this.colorEscamas = colorEscamas;
+    }
+
+    public int getCantidadAletas() {
+        return cantidadAletas;
+    }
+
+    public void setCantidadAletas(int cantidadAletas) {
+        this.cantidadAletas = cantidadAletas;
+    }
 }
