@@ -5,7 +5,7 @@ import gestion.Zona;
 import java.util.ArrayList;
 
 public class Reptil extends Animal{
-    private static ArrayList<Reptil> listado = new ArrayList<>();
+    private ArrayList<Reptil> listado = new ArrayList<>();
     public int iguanas;
     public int serpientes;
     private String colorEscamas;
