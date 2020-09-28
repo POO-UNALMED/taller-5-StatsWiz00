@@ -24,14 +24,6 @@ public class Zona {
         this.nombre = nombre;
     }
 
-    public Zoologico getZoo() {
-        return zoo;
-    }
-
-    public void setZoo(Zoologico zoo) {
-        this.zoo = zoo;
-    }
-
     public void agregarAnimales(Animal animal){
         animales.add(animal);
     }
