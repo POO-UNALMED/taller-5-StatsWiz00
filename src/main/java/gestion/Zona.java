@@ -8,13 +8,12 @@ public class Zona {
     public Zona(){
 
     }
-    public Zona(Zoologico zoo, Animal[] animales) {
-        this.zoo = zoo;
-        this.animales = animales;
-    }
-    public void agregarAnimales(Animal animal){
 
+    public Zona(String nombre, Zoologico zoo) {
+        this.nombre = nombre;
+        this.zoo = zoo;
     }
+
 
     public String getNombre() {
         return nombre;

@@ -12,10 +12,8 @@ public class Ave extends Animal{
 
     }
 
-    public Ave(Ave[] listado, int halcones, int aguilas, String colorPlumas) {
-        this.listado = listado;
-        this.halcones = halcones;
-        this.aguilas = aguilas;
+    public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
+        super(nombre, edad, habitat, genero);
         this.colorPlumas = colorPlumas;
     }
 
