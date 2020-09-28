@@ -16,30 +16,19 @@ public class Ave extends Animal{
     public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
         super(nombre, edad, habitat, genero);
         this.colorPlumas = colorPlumas;
+        listado.add(this);
     }
 
-    public int getHalcones() {
-        return halcones;
+    public Ave crearHalcón(String nombre,int edad, String genero){
+        halcones++;
+        return new Ave(nombre, edad, "montañas", genero, "cafe glorioso");
     }
-
-    public void setHalcones(int halcones) {
-        this.halcones = halcones;
+    public Ave crearAguila(String nombre,int edad, String genero){
+        aguilas++;
+        return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
     }
-
-    public int getAguilas() {
-        return aguilas;
-    }
-
-    public void setAguilas(int aguilas) {
-        this.aguilas = aguilas;
-    }
-
-    public String getColorPlumas() {
-        return colorPlumas;
-    }
-
-    public void setColorPlumas(String colorPlumas) {
-        this.colorPlumas = colorPlumas;
+    public int cantidadAves(){
+        return listado.size();
     }
     @Override
     public String movimiento(){
