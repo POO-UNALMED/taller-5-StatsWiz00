@@ -30,6 +30,23 @@ public class Ave extends Animal{
     public int cantidadAves(){
         return listado.size();
     }
+
+    public ArrayList<Ave> getListado() {
+        return listado;
+    }
+
+    public void setListado(ArrayList<Ave> listado) {
+        this.listado = listado;
+    }
+
+    public String getColorPlumas() {
+        return colorPlumas;
+    }
+
+    public void setColorPlumas(String colorPlumas) {
+        this.colorPlumas = colorPlumas;
+    }
+
     @Override
     public String movimiento(){
         return "volar";

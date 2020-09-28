@@ -35,6 +35,29 @@ public class Reptil extends Animal{
         return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
     }
 
+    public ArrayList<Reptil> getListado() {
+        return listado;
+    }
+
+    public void setListado(ArrayList<Reptil> listado) {
+        this.listado = listado;
+    }
+
+    public String getColorEscamas() {
+        return colorEscamas;
+    }
+
+    public void setColorEscamas(String colorEscamas) {
+        this.colorEscamas = colorEscamas;
+    }
+
+    public int getLargoCola() {
+        return largoCola;
+    }
+
+    public void setLargoCola(int largoCola) {
+        this.largoCola = largoCola;
+    }
 
     @Override
     public String movimiento(){

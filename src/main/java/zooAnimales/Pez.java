@@ -31,6 +31,31 @@ public class Pez extends Animal{
     public int cantidadPeces(){
         return listado.size();
     }
+
+    public ArrayList<Pez> getListado() {
+        return listado;
+    }
+
+    public void setListado(ArrayList<Pez> listado) {
+        this.listado = listado;
+    }
+
+    public String getColorEscamas() {
+        return colorEscamas;
+    }
+
+    public void setColorEscamas(String colorEscamas) {
+        this.colorEscamas = colorEscamas;
+    }
+
+    public int getCantidadAletas() {
+        return cantidadAletas;
+    }
+
+    public void setCantidadAletas(int cantidadAletas) {
+        this.cantidadAletas = cantidadAletas;
+    }
+
     @Override
     public String movimiento(){
         return "nadar";

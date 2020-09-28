@@ -34,6 +34,31 @@ public class  Anfibio extends Animal {
     public int cantidadAnfibios(){
         return listado.size();
     }
+
+    public ArrayList<Anfibio> getListado() {
+        return listado;
+    }
+
+    public void setListado(ArrayList<Anfibio> listado) {
+        this.listado = listado;
+    }
+
+    public String getColorPiel() {
+        return colorPiel;
+    }
+
+    public void setColorPiel(String colorPiel) {
+        this.colorPiel = colorPiel;
+    }
+
+    public boolean getVenenoso() {
+        return venenoso;
+    }
+
+    public void setVenenoso(boolean venenoso) {
+        this.venenoso = venenoso;
+    }
+
     @Override
     public String movimiento(){
         return "saltar";
