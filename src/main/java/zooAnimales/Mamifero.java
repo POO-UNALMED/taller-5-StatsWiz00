@@ -35,11 +35,11 @@ public class Mamifero extends Animal{
         return new Mamifero(nombre,edad,"pradera",genero,true,4);
     }
 
-    public ArrayList<Mamifero> getListado() {
+    public static ArrayList<Mamifero> getListado() {
         return listado;
     }
 
-    public void setListado(ArrayList<Mamifero> listado) {
+    public static void setListado(ArrayList<Mamifero> listado) {
         Mamifero.listado = listado;
     }
 

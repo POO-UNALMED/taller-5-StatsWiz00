@@ -5,7 +5,7 @@ import gestion.Zona;
 import java.util.ArrayList;
 
 public class Pez extends Animal{
-    private ArrayList<Pez> listado = new ArrayList<>();
+    private static ArrayList<Pez> listado = new ArrayList<>();
     public static int salmones;
     public static int bacalaos;
     private String colorEscamas;
@@ -22,13 +22,15 @@ public class Pez extends Animal{
         listado.add(this);
     }
 
-    public Pez crearSalmon(String nombre, int edad, String genero){
+    public static Pez crearSalmon(String nombre, int edad, String genero){
+        salmones++;
         return new Pez(nombre, edad, "oceano",genero,"rojo",6);
     }
-    public Pez crearBacalao(String nombre, int edad, String genero){
+    public static Pez crearBacalao(String nombre, int edad, String genero){
+        bacalaos++;
         return new Pez(nombre, edad, "oceano",genero,"gris",6);
     }
-    public int cantidadPeces(){
+    public static int cantidadPeces(){
         return listado.size();
     }
 
@@ -37,7 +39,7 @@ public class Pez extends Animal{
     }
 
     public void setListado(ArrayList<Pez> listado) {
-        this.listado = listado;
+        Pez.listado = listado;
     }
 
     public String getColorEscamas() {
