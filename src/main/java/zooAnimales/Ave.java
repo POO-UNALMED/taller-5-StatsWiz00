@@ -2,8 +2,10 @@ package zooAnimales;
 
 import gestion.Zona;
 
+import java.util.ArrayList;
+
 public class Ave extends Animal{
-    private Ave[] listado;
+    private ArrayList<Ave> listado = new ArrayList<Ave>();
     public int halcones;
     public int aguilas;
     private String colorPlumas;
@@ -14,14 +16,6 @@ public class Ave extends Animal{
     public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
         super(nombre, edad, habitat, genero);
         this.colorPlumas = colorPlumas;
-    }
-
-    public Ave[] getListado() {
-        return listado;
-    }
-
-    public void setListado(Ave[] listado) {
-        this.listado = listado;
     }
 
     public int getHalcones() {
