@@ -21,7 +21,7 @@ public class Ave extends Animal{
 
     public static Ave crearHalcon(String nombre,int edad, String genero){
         halcones++;
-        return new Ave(nombre, edad, "montañas", genero, "cafe glorioso");
+        return new Ave(nombre, edad, "monta" +"\u00f1" +"as", genero, "cafe glorioso");
     }
     public Ave crearAguila(String nombre,int edad, String genero){
         aguilas++;
@@ -36,7 +36,7 @@ public class Ave extends Animal{
     }
 
     public void setListado(ArrayList<Ave> listado) {
-        this.listado = listado;
+        Ave.listado = listado;
     }
 
     public String getColorPlumas() {
