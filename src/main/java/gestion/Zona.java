@@ -31,6 +31,14 @@ public class Zona {
         Zona.animales = animales;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public void agregarAnimales(Animal animal){
         animales.add(animal);
     }
