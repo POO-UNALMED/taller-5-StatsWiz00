@@ -11,7 +11,7 @@ public class Ave extends Animal{
     public Ave(){
 
     }
-    public Ave(Ave[] listado, int halcones, int aguilas, String colorPlumas,int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
+    public Ave(Ave[] listado, int halcones, int aguilas, String colorPlumas,int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona) {
         super(totalAnimales, nombre, edad, habitat, genero, zona);
         this.listado = listado;
         this.halcones = halcones;
@@ -49,5 +49,9 @@ public class Ave extends Animal{
 
     public void setColorPlumas(String colorPlumas) {
         this.colorPlumas = colorPlumas;
+    }
+    @Override
+    public String movimiento(){
+        return "volar";
     }
 }

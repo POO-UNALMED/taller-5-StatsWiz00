@@ -12,7 +12,7 @@ public class Reptil extends Animal{
     public Reptil(){
 
     }
-    public Reptil(Reptil[] listado, int iguanas, int serpientes, String colorEscamas, int largoCola ,int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
+    public Reptil(Reptil[] listado, int iguanas, int serpientes, String colorEscamas, int largoCola ,int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona) {
         super(totalAnimales, nombre, edad, habitat, genero, zona);
         this.listado = listado;
         this.iguanas = iguanas;
@@ -59,5 +59,9 @@ public class Reptil extends Animal{
 
     public void setLargoCola(int largoCola) {
         this.largoCola = largoCola;
+    }
+    @Override
+    public String movimiento(){
+        return "reptar";
     }
 }

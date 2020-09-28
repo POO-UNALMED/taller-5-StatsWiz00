@@ -12,7 +12,7 @@ public class  Anfibio extends Animal {
     public Anfibio(){
     }
 
-    public Anfibio(Anfibio[] listado, int ranas, int salamandras, String colorPiel, boolean venenoso, int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
+    public Anfibio(Anfibio[] listado, int ranas, int salamandras, String colorPiel, boolean venenoso, int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona) {
         super(totalAnimales, nombre, edad, habitat, genero, zona);
         this.listado = listado;
         this.ranas = ranas;
@@ -59,5 +59,9 @@ public class  Anfibio extends Animal {
 
     public void setVenenoso(boolean venenoso) {
         this.venenoso = venenoso;
+    }
+    @Override
+    public String movimiento(){
+        return "saltar";
     }
 }

@@ -6,12 +6,12 @@ public class Animal {
     private int edad;
     private String habitat;
     private String genero;
-    private Zona[] zona;
+    private Zona zona;
 
     public Animal(){
 
     }
-    public Animal(int totalAnimales, String nombre, int edad, String habitat, String genero, Zona[] zona) {
+    public Animal(int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona) {
         this.totalAnimales = totalAnimales;
         this.nombre = nombre;
         this.edad = edad;
@@ -60,11 +60,18 @@ public class Animal {
         this.genero = genero;
     }
 
-    public Zona[] getZona() {
+    public Zona getZona() {
         return zona;
     }
 
-    public void setZona(Zona[] zona) {
+    public void setZona(Zona zona) {
         this.zona = zona;
+    }
+
+    public String movimiento(){
+        return "desplazarse";
+    }
+    public String toString(){
+        return "Mi nombre es " +nombre+", tengo una edad de " +edad+", habito en "+habitat+"y mi genero es "+genero+", la zona en la que me ubico es "+zona+", en el #zoo";
     }
 }
